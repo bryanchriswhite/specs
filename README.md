@@ -8,26 +8,28 @@ This is the [Filecoin Specification](https://github.com/filecoin-project/specs),
 
 ## Table of Contents
 
--   [Install](#install)
--   [Writing the spec](#writing-the-spec)
--   [Check your markdown](#check-your-markdown)
--   [Page Template](#page-template)
--   [Code](#code)
--   [Images](#images)
--   [Links](#links)
--   [Shortcodes](#shortcodes)
-    -   [`embed`](#embed)
-    -   [`listing`](#listing)
-    -   [`mermaid`](#mermaid)
-    -   [`hint`](#hint)
--   [Math mode](#math-mode)
-    -   [Wrap `def`, `gdef`, etc.](#wrap-def-gdef-etc)
-    -   [Wrap inline math text with code blocks](#wrap-inline-math-text-with-code-blocks)
-    -   [Wrap math blocks with code fences](#wrap-math-blocks-with-code-fences)
--   [Front-matter](#front-matter)
--   [External modules](#external-modules)
--   [Solving Common problems](#solving-common-problems)
--   [References](#references)
+- [Filecoin Specification](#filecoin-specification)
+  - [Table of Contents](#table-of-contents)
+  - [Install](#install)
+  - [Writing the spec](#writing-the-spec)
+  - [Check your markdown](#check-your-markdown)
+  - [Page Template](#page-template)
+  - [Code](#code)
+  - [Images](#images)
+  - [Links](#links)
+  - [Shortcodes](#shortcodes)
+    - [`embed`](#embed)
+    - [`listing`](#listing)
+    - [`mermaid`](#mermaid)
+    - [`hint`](#hint)
+  - [Math mode](#math-mode)
+    - [Wrap `def`, `gdef`, etc.](#wrap-def-gdef-etc)
+    - [Wrap inline math text with code blocks](#wrap-inline-math-text-with-code-blocks)
+    - [Wrap math blocks with code fences](#wrap-math-blocks-with-code-fences)
+  - [Front-matter](#front-matter)
+  - [External modules](#external-modules)
+  - [Solving Common problems](#solving-common-problems)
+  - [References](#references)
 
 ## Install
 
@@ -106,10 +108,12 @@ Your algorithm here
 ```
 ````
 
-You can embed source code from other repos. Mount the repo as a hugo modules as descibed in [External Modules](#external-modules) then use the [`embed shorcode`](#embed) to link to a specific symbol.
+You can embed source code from other repos. Mount the repo as a hugo modules as described in [External Modules](#external-modules) then use the [`embed shorcode`](#embed) to link to a specific symbol.
 
-```go
+```text
 {{<embed src="/externals/go-data-transfer/types.go"  lang="go" symbol="Channel">}}
+
+{{<embed src="github:filecoin-project/specs-actors/actors/builtin/paych/paych_actor.go" lang="go">}}
 ```
 
 ## Images
@@ -177,6 +181,10 @@ hugo shortcodes you can add to your markdown.
 # can embed symbols from Go files
 # extracts comments and symbol body
 {{<embed src="/externals/go-data-transfer/types.go"  lang="go" symbol="Channel">}}
+
+
+# embed from github
+{{<embed src="github:filecoin-project/specs-actors/actors/builtin/paych/paych_actor.go" lang="go">}}
 ```
 
 ### `listing`
