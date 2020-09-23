@@ -49,7 +49,7 @@ and therefore, in terms of the Systems they run. For example:
 
 - **Chain Verifier Node:** Runs the Blockchain system. Can sync and validate the chain. Cannot mine or produce blocks.
 - **Client Node:** Runs the Blockchain, Market, and Data Transfer systems. Can sync and validate the chain. Cannot mine or produce blocks.
-- **Retrieval Miner Node:** Runs the Market and Data Transfer systems. Does not need the chain. Can make Retrieval Deals
+- **Retrieval Miner Node:** Runs the Blockchain, Market and Data Transfer systems. Can make Retrieval Deals
   (Retrieval Provider side). Can send Clients data, and get paid for it.
 - **Storage Miner Node:** Runs the Blockchain, Storage Market, Storage Mining systems. Can sync and validate the chain.
   Can make Storage Deals (Storage Provider side). Can seal stored data into sectors. Can acquire
